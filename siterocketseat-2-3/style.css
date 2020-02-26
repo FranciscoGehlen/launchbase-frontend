@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+html, body{
+    height: 100%;
+    overflow: auto;
+
+}
+
+body{
+    background: linear-gradient(50deg,#141414,#5e3e8b);
+    font-family: 'Roboto','Open Sans';
+
+}
+
+header{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #333;
+    
+}
+header a{
+    text-align: center;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+}
+header a:hover{
+    margin: 30px;
+    text-decoration: none;
+    color: greenyellow;
+    font-size:20px;
+    transition: ease-in 200ms;
+}
+.navigation{
+    text-align: center;
+}
+
+#logo{
+    text-align: center;
+}
+
+#logo img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+}
+
+main{
+    padding: 30px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+}
+
+main h1{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+main h2{
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+main h3{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+#techno{
+    color: greenyellow;
+    max-width: 400px;
+    margin: auto;
+}
+
+.technology{
+    border: #141414 solid 2px;
+    border-radius: 10px;
+    background-color: rgba(11, 10, 13, 0.7);
+    margin: 20px;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+/* ----------- cards ---------*/
+.cards{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card{
+    background: url('https://skylab.rocketseat.com.br/static/40a7d53e92496bfa7622792225a98d1c.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+    border-radius: 25px;
+    position: relative;
+}
+
+div span{
+    font-size: 16px;
+    width: 48px;
+    height: 48px;
+    margin: 30px auto 0px auto;
+    border: 3px rgb(113, 89, 193) solid;
+    border-radius: 50%;
+    padding: 15px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.card p{
+    margin: 30px 10px;
+    font-size: 18px;
+}
+
+.card img{
+    margin-top: 30px;
+}
+
+.starter strong{
+    color: rgb(113, 89, 193);
+}
+
+.GoStack strong{
+    color: rgb(4, 211, 97);
+}
+
+.Launchbase strong{
+    color: rgb(253, 149, 31);
+}
+
+.ctype{
+    text-align: right;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+/* ----------- modal ---------*/
+.modall-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modall {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.close-modall{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.maximize-modall{
+    color: black;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    cursor: pointer;
+}
+
+
+
+/* ----------- modal active ---------*/
+.modall-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    position: absolute;
+}
+
+.maximize{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ----------- footer ---------*/
+ul.nav{
+    float:right;
+    position: relative;
+}
+
+footer{
+    background: #00000062;
+    border-top: rgb(56, 56, 56) solid 2px;
+    margin-bottom: 20px;
+    padding: 30px 0px;
+    color: white;
+}
+
+footer a{
+    text-align: right;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+}
+footer a:hover {
+    text-align: right;
+    margin: 30px;
+    text-decoration: none;
+    color: greenyellow;
+    font-size:20px;
+    transition: ease-in 200ms;
+}
+
+@media screen and (max-width: 767px) {
+    #techno h2{
+        border-bottom: 100px;
+    }
+
+    ul.nav{
+        margin: 30px;
+        text-align: center;
+    }
+}
